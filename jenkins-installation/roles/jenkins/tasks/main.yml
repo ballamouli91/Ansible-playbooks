@@ -28,6 +28,7 @@
     name: jenkins
     state: present
   become: true
+  #change jenkins setings
 - name: Change Jenkins JAVA options
   lineinfile: 
     dest=/etc/sysconfig/jenkins
